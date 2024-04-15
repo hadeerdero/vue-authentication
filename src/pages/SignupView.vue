@@ -10,13 +10,15 @@
                 <div class="two-forms">
                     <div class="input-box">
                         <input type="text" class="input-field" placeholder="Firstname">
+                        <i class="fa-solid fa-user"></i>
                         <!-- <i class="box bx-user"></i> -->
-                        <i class="fa-light fa-user"></i>
+                        <!-- <i class="fa-light fa-user"></i> -->
                     </div>
                     <div class="input-box">
                         <input type="text" class="input-field" placeholder="Lastname">
+                        <i class="fa-solid fa-user"></i>
                         <!-- <i class="box bx-user"></i> -->
-                        <i class="fa-light fa-user"></i>
+                        <!-- <i class="fa-light fa-user"></i> -->
                     </div>
                 </div>
                 <div class="input-box">
@@ -26,7 +28,8 @@
                 </div>
                 <div class="input-box">
                     <input type="password" class="input-field" placeholder="Password">
-                    <i class="box bx-lock-alt"></i>
+                    <i class="fa-solid fa-lock"></i>
+                    <!-- <i class="box bx-lock-alt"></i> -->
                 </div>
                 <div class="input-box">
                     <input type="submit" class="submit" value="Register">
@@ -46,6 +49,10 @@
 </template>
 <script>
 export default{
-    
+    methods:{
+    login(){
+        this.$emit("login")
+    }
+ }
 }
 </script>

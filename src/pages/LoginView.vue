@@ -10,11 +10,12 @@
             
                 <div class="input-box">
                     <input type="text" class="input-field" placeholder="Username or Email">
-                    <i class="box bx-user"></i>
+                    <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-box">
                     <input type="password" class="input-field" placeholder="Password">
-                    <i class="fa-light fa-user"></i>
+                    <!-- <i class="fa-light fa-user"></i>-->
+                    <i class="fa-solid fa-lock"></i>
                     <!-- <i class="box bx-lock-alt"></i> -->
                 </div>
                 <div class="input-box">
@@ -52,6 +53,10 @@
 </template>
 <script>
 export default{
-    
-}
+ methods:{
+    register(){
+        this.$emit("register")
+    }
+ }
+  }
 </script>

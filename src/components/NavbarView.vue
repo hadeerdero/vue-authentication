@@ -24,8 +24,8 @@
         </nav>
         <!--------------------Form Box----------------->
         <div class=" form-box">
-           <Login v-show="displayLogin" class="animate__animated animate__backInLeft"></Login>
-           <SingUp v-show="displayRegester" class="animate__animated animate__backInRight"></SingUp>
+           <Login v-show="displayLogin" class="animate__animated animate__backInLeft" @register="register()"></Login>
+           <SingUp v-show="displayRegester" class="animate__animated animate__backInRight" @login="login()"></SingUp>
            
         </div>
     </div>
