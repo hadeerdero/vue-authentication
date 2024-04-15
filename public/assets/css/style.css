@@ -68,6 +68,7 @@ body{
 }
 #registerBtn{
     margin-left: 15px;
+    margin-right: 10px;
 }
 .btn.white-btn{
 background: rgba(255,255,255,.7);
