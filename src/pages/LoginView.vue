@@ -8,7 +8,7 @@
             >Sign Up</a
           ></span
         >
-        <header>Login</header>
+        <header>Login {{firstName}}</header>
       </div>
 
       <div class="input-box">
@@ -58,7 +58,13 @@
   </div>
 </template>
 <script>
+import {mapState} from 'vuex';
 export default {
+  computed: {
+    ...mapState('auth',{
+      firstName:(state) => state.name,
+    })
+  },
   methods: {
     register() {
       this.$emit("register");
